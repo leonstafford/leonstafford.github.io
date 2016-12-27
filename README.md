@@ -10,6 +10,10 @@ Now specialising in book/publishing related industries.
 
 Computer hardware/software tinkerer for about 30 years. Passion for automation and open source.
 
+## Open Source Projects
+
+ - [WordPress Static HTML Output plugin](https://wordpress.org/plugins/static-html-output-plugin/) Benefit from WordPress as a CMS but with the speed, performance and portability of a static site
+
 ## Online profiles/resume
 
  - [StackExchange profile](http://stackexchange.com/users/1838097/leon-stafford)
