@@ -16,7 +16,8 @@ Computer hardware/software tinkerer for about 30 years. Passion for automation a
 
 ## Online profiles/resume
 
- - [StackExchange profile](http://stackexchange.com/users/1838097/leon-stafford)
+ - [StackOverflow CV](https://stackoverflow.com/cv/cloud)
+ - [StackExchange Profile](http://stackexchange.com/users/1838097/leon-stafford)
  - [Upwork profile](https://www.upwork.com/freelancers/~0141e7640942d9fbd1)
  - [Online Resume](https://careers.stackoverflow.com/cloud) 
 
