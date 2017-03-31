@@ -13,7 +13,7 @@ Computer hardware/software tinkerer for about 30 years. Passion for automation a
 ### Open Source Projects
 
  - [WordPress Static HTML Output plugin](https://wordpress.org/plugins/static-html-output-plugin/) Benefit from WordPress as a CMS but with the speed, performance and portability of a static site
- - [WordPress Flexible CSV Importer plugin](https://github.com/leonstafford/wp-flexible-csv-importer) Fills a gap between the over-priced CSV importers and the limited free ones. In last stages of development before first release.
+ - [WordPress Flexible CSV Importer plugin](https://wordpress.org/plugins/wp-flexible-csv-importer/) Fills a gap between the over-priced CSV importers and the limited free ones. In last stages of development before first release.
 
 ## Online profiles/resume
 
