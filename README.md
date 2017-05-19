@@ -1,4 +1,4 @@
-## I'm a computery guy
+## I'm a [computery guy](https://www.youtube.com/watch?v=G9FGgwCQ22w)
 
 In former lives, I've donned the hats of antiquarian book dealer, test automation guy, tech consultant, foodbank volunteer, underground craps croupier, Japanese "host", kindergarten teacher, programmer, used computer dealer, copy-boy, waiter, bi-lingual receptionist, opal salesman, tour guide, cleaner.
 
