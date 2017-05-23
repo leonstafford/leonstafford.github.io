@@ -4,7 +4,7 @@ In former lives, I've donned the hats of antiquarian book dealer, test automatio
 
 ### Hire me if you are doing something good for humanity
 
-Currently doing some evil marketing work to pay the bills, whilst volunteering my time to [sleepsbus.org](http://sleepsbus.org) development, studying maths, programming and 3D animation and trying to advance open source projects.   
+Currently doing some evil marketing work to pay the bills, whilst volunteering my time to [sleepbus.org](http://sleepbus.org) development, studying maths, programming and 3D animation and trying to advance open source projects.   
 
 ## My boat-floaters
 
