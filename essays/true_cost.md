@@ -35,7 +35,7 @@ That maybe clears it up for me, I may have been judging people as hypocrites, wh
 
 So, let's then get back to the humble act of recycling - how much is enough? How much would be enough to appease my societal judgements (even though, by doing so, I'm enobling myself to hypocrite status)? 
 
-In software development, we love to push back when receiving feedback that a webpage is "loading too slow". The flaw being the "too", implying there is some perfect yet unspoken amount time that a webpage should load in. It is all *too* common to solicit "How many seconds should it load in?" to the reporter, only to receive "I don't know, just not that slow!". Instantly would be ideal, though theoretically impossible(?). A few milliseconds, then? Sure, but it will cost an extra $1 million for our site to load that quickly. OK, now we have another scale to slide along with our speed, we have cost. Maybe, in this case, we can throw quality in for the usual trifecta - we can load the webpage quicker if we take out some of the content and usefulness of it. 
+In software development, we love to push back when receiving feedback that a webpage is "loading too slow". The flaw being the "too", implying there is some perfect yet unspoken amount of time that a webpage should load in. It is all *too* common to solicit "How many seconds should it load in?" to the reporter, only to receive "I don't know, just not that slow!". Instantly would be ideal, though theoretically impossible(?). A few milliseconds, then? Sure, but it will cost an extra $1 million for our site to load that quickly. OK, now we have another scale to slide along with our speed, we have cost. Maybe, in this case, we can throw quality in for the usual trifecta - we can load the webpage quicker if we take out some of the content and usefulness of it. 
 
 You can see where I'm heading now. Maybe the hypothetical person I previously judged harshly for their poor environmental net impact, has compromised on this one metric in order to boost others, which add value to society? Without going into the danger-zone of the meaning of life, let's take a stab at the values of soceity: to survive and thrive? In this case, perhaps being a bit lackadaisical with polluting the environment the society needs for survival, is in order to make better progress in the sciences to keep us alive or to focus more on reproduction?
 
@@ -65,13 +65,13 @@ This is where I get stuck in understanding balance/moderation/compromise. One mi
 
 ## User action required
 
-I still love that ([disputed](https://en.wikiquote.org/wiki/Edmund_Burke#Disputed) quote:
+I still love that [disputed](https://en.wikiquote.org/wiki/Edmund_Burke#Disputed) quote:
 
 > All that is necessary for the triumph of evil is that good men do nothing  
 
 *I'm starting to get interested in mathematics now, thanks to functional programming and the ability to express executable formulae, so that I can express and experiment with world-simulations around theories like these. For now, no magic formula, I'll just use limited words.*
 
-Let's say that the point that most people hit in their consumption and waste production falls to a negative 1.5 the magical sweet spot where the environment is sustainable. We now need 1 *good* member of society to make twice as much positive effect for every 2 *bad* members of society. What if it's more like 10 or 100 people who are at the -1.5 rate of damaging the environment? That 101st person now has to do a *lot* more to counter the effects. 
+Let's say that the point that most people hit in their consumption and waste production falls to a negative 1.5 of the magical sweet spot where the environment is sustainable. We now need 1 *good* member of society to make twice as much positive effect for every 2 *bad* members of society, just to keep things running. What if it's more like 10 or 100 people who are at the -1.5 rate of damaging the environment? That 101st person now has to do a *lot* more to counter the effects. 
 
 I think this is coming to be more of a personal call to arms that I can no longer deny (*can* being close to *should* here, in that there is an inherent *if* following). 
 
@@ -79,7 +79,9 @@ I wake up everyday because I enjoy life enough to want to experience it. I enjoy
 
 Trying to express these feelings on the fly to people, I have a tendency to come across as overly negative, I think because I fail to show both sides simultaneously, usually focusing on one of the extremities. By writing it down, it allows me to show that maybe "Cynics are - beneath it all - only idealists with awkwardly high standards." (thanks again, Alain de Botton!).
  
+Questions for composing formulae: 
 
+ - What is the average net impact of a human on the sustainability of our habitat?
 
 
 [back](/)
