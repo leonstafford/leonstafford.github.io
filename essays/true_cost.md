@@ -45,6 +45,14 @@ At a stretch, perhaps - depending on how much water this person drinks and how s
 
 More often though, we can look outside (or within our own homes) and see many examples of an apparent compromise, or accepted level of complacency with regards to conservation of our human habitat.
 
+A reminder here, that the author is just as culpable for having done/still doing these things:
+
+ - buying new LED lightbulbs to replace working tungstens
+ - buying a new fuel-efficient car to replace one which needs a few repairs
+ - installing solar panels and batteries to umm, save the planet?
+
+ 
+
 
 
 [back](/)
