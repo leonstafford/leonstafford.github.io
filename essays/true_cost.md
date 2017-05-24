@@ -81,7 +81,7 @@ Trying to express these feelings on the fly to people, I have a tendency to come
  
 Questions for composing formulae: 
 
- - What is the average net impact of a human on the sustainability of our habitat?
+ - What is the average net impact of a human on the sustainability of our habitat? [You can answer here](https://sustainability.stackexchange.com/q/6003/4312)
 
 
 [back](/)
