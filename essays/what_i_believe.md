@@ -37,3 +37,4 @@ Over years of exposure to different people, cultures and philosophies, the most 
 Just as the world was for a long time considered to be flat or previously mysterious phenomena came to be reasoned with, I choose to believe that our existence is something as yet unable to be understood. And that's fine for me. Without conclusive proof that life is meaningless, I choose to keep at least one leg over the side of the fence belonging to optimism.
 
 
+[back](/)
