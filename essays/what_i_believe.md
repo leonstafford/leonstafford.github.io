@@ -8,7 +8,7 @@ title: What I believe
 
 Written more for my children and partner to help understand my actions.
 
-### There is no spoon
+### Are questions more interesting than statements?
 
 "What's the point?" can often be exasperated in moments of depression. Rather than it's usual negative lamentation, leading to frustration at the lack of evidential answers, we can choose to embrace it for the beauty of it's limitless depth.
 
@@ -20,7 +20,13 @@ I started asking the big questions around 20, while being involved in volunteer 
 
 My mentor at the time gave me some sage advice as I questioned whether there was any such thing as a selfless act. He mentioned people finding different ways to feel alive, be it racing fast cars, doing extreme sports, making as much money as possible or giving to the less fortunate. Having tried all those things at times (less so, the extreme sports), none gave me a magical answer to my existence, but now coming back to giving of myself for others, it feels a more fulfilling way to spend the days.
 
+### What use is an empty cup?
 
+During my initial stint of volunteerism, I encountered some adversity with visas, relationships and finances, which I felt was undeserved in the cosmic balance sheet after all my "selfless" acts. My love for humanity was definitely not unconditional then. 
 
+Fast-forward through 10 years of becoming a parent, struggling with working jobs I couldn't believe in and being a blind consumer, I now find myself back on a track which fills my existential cup.
 
+Love is something I hesitate to write about, as it's still something I don't really discuss amongst male friends, but here in static words, they can at least read it within their comfort zones. Integrity may be another useful word, in that being the kind of person you would want to be with/could love may define having self-integrity. Being able to love yourself has been expressed as a requisite to being able to love others, as opposed to the narcissist who though self-centered, may not be able to love themself, let alone anyone else.  
+
+Through years of working for people and companies whose products and services I don't value as useful to society, I've been slowly losing this self-integrity. By acting out consumerist desires, having shallow relationships and otherwise living against my gut feelings, I fell out of love with myself. Time apart has been beneficial to my current meaningful relationship, but it is much harder to spend time apart from oneself in order to mend that most important of relationships.
 
