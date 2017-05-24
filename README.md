@@ -21,6 +21,7 @@ Currently doing some evil marketing work to pay the bills, whilst volunteering m
 ### Essays (WIP)
 
  - [The true cost of everything](/essays/true_cost.html) Should vegans become rocks to minimize their impact on the earth and our ears?
+ - [What I believe](/essays/what_i_believe.html) Proofless acceptance and self-justification  
  - [The CLI can set us free](#) Who really needs a new computer?  
 
 ## Online profiles/resume
