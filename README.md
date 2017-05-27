@@ -12,8 +12,10 @@ A role I'm undertaking again now and realizing how much I enjoy it is as a Devel
  - doing some programming/testing/infrastructure hands on work
  - refining the product backlog and ensuring development-ready tasks are available for developers
  - engaging with the development community to find and on-board volunteers
+ - design and implement efficient processes for end to end development
+ - most importantly, to help 
 
-I'll be seeking out other organizations in need of such help in unpaid/paid volunteer positions.
+I'll be seeking out other organizations in need of such help in unpaid and looking to fundraise my own support, so as not to have to do paid work for less socially benefitting companies.
 
 ## My boat-floaters
 
