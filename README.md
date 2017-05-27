@@ -17,6 +17,8 @@ A role I'm undertaking again now and realizing how much I enjoy it is as a Devel
 
 I'll be seeking out other organizations in need of such help in unpaid and looking to fundraise my own support, so as not to have to do paid work for less socially benefitting companies.
 
+Help [fund me on Patreon](https://www.patreon.com/leonstaffford), even $1 is a help!
+
 ## My boat-floaters
 
  - overcoming technical challenges
