@@ -2,9 +2,18 @@
 
 In former lives, I've donned the hats of antiquarian book dealer, test automation guy, tech consultant, foodbank volunteer, underground craps croupier, Japanese "host", kindergarten teacher, programmer, used computer dealer, copy-boy, waiter, bi-lingual receptionist, opal salesman, tour guide, cleaner.
 
-### Hire me if you are doing something good for humanity
+### Available to NPO's as a Development Manager
 
-Currently doing some evil marketing work to pay the bills, whilst volunteering my time to [sleepbus.org](http://sleepbus.org) development, studying maths, programming and 3D animation and trying to advance open source projects.   
+Currently doing some evil marketing work to pay the bills, whilst volunteering my time to [sleepbus.org](http://sleepbus.org) development, studying maths, programming and 3D animation and trying to advance open source projects.
+
+A role I'm undertaking again now and realizing how much I enjoy it is as a Development Manager for an NPO. This encompasses the following responsibilities:
+
+ - being the "man in the middle" between the business and the software team
+ - doing some programming/testing/infrastructure hands on work
+ - refining the product backlog and ensuring development-ready tasks are available for developers
+ - engaging with the development community to find and on-board volunteers
+
+I'll be seeking out other organizations in need of such help in unpaid/paid volunteer positions.
 
 ## My boat-floaters
 
