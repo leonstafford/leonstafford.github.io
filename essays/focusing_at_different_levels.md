@@ -45,7 +45,17 @@ At this point, I became a bit overwhelemed with thinking at the social level - "
 
 And there it is, the tendency to switch back to a higher or lower level - go full on existential or hide from it and focus on selfish survival.
 
-The problem with going the selfish survival route, in my view, is that it is unrealistic and unsustainable. My primal programming to make strong children and see my lineage continue fails my engineering scrutiny in that safety of habitat cannot be guaranteed as long as such destructive tendencies exist in society.
+The problem with going the selfish survival route, in my view, is that it is unrealistic and unsustainable. My primal programming to make strong children and see my lineage continue fails my engineering scrutiny in that safety of habitat cannot be guaranteed as long as such destructive tendencies exist in society. The same may be said for the futility of human existence, but my chosen belief is to enjoy the experience of life and not pretend to understand the big "Why?".
+
+Similarily, focusing only on the existential for me can at worst lead to depressive states and is not conducive to positive action.
+
+### What's in the cup?
+
+The metaphor of cups, introduced to me by my partner, I may understand as fulfilment. Keep your cup full, help others to fill their cups. Share a cup together, but don't drink from each other's cups.
+
+Just as we don't want to have drinks spiked at a club or consume water full of plastic derived pollutants, we want our cups to be clean and healthy. Flavour is also important, too much existential bitterness or hedonistic sweetness may reduce the palatability of our human cocktail.
+
+
 
 
 
