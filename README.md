@@ -31,11 +31,11 @@ Help [fund me on Patreon](https://www.patreon.com/leonstaffford), even $1 is a h
  - [WordPress Flexible CSV Importer plugin](https://wordpress.org/plugins/wp-flexible-csv-importer/) Fills a gap between the over-priced CSV importers and the limited free ones. In last stages of development before first release.
   - [CLI RSS Reader](https://github.com/lotz84/cli-rss-reader) Is what I'm using to learn me a Haskell
 
-### Essays (WIP)
+### Essays
 
  - [The true cost of everything](/essays/true_cost.html) Should vegans become rocks to minimize their impact on the earth and our ears?
  - [What I believe](/essays/what_i_believe.html) Proofless acceptance and self-justification  
- - [The CLI can set us free](#) Who really needs a new computer?  
+ - [Focusing at different levels](/essays/focusing_at_different_levels.md) Being social, spiritual or primal  
 
 ## Online profiles/resume
 
