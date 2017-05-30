@@ -53,7 +53,7 @@ Similarily, focusing only on the existential for me can at worst lead to depress
 
 The metaphor of cups, introduced to me by my partner, I may understand as fulfilment. Keep your cup full, help others to fill their cups. Share a cup together, but don't drink from each other's cups.
 
-Just as we don't want to have drinks spiked at a club or consume water full of plastic derived pollutants, we want our cups to be clean and healthy. Flavour is also important, too much existential bitterness or hedonistic sweetness may reduce the palatability of our human cocktail.
+Just as we don't want to have drinks spiked at a club or consume water full of plastic derived pollutants, we want what's in our cups to be clean and healthy. Flavour is also important, too much existential bitterness or hedonistic sweetness may reduce the palatability of our human cocktail.
 
 ### Continuing discipline
 
