@@ -55,8 +55,8 @@ The metaphor of cups, introduced to me by my partner, I may understand as fulfil
 
 Just as we don't want to have drinks spiked at a club or consume water full of plastic derived pollutants, we want our cups to be clean and healthy. Flavour is also important, too much existential bitterness or hedonistic sweetness may reduce the palatability of our human cocktail.
 
+### Continuing discipline
 
-
-
+Being not of a religious persuasion, I think self-discipline will require training to be mindful of these levels of focus, amongst other goals. From 10 to 20 years old, I found discipline through martial arts, luckily at an organisation with a strong set of virtues. I have an increasing awareness of the need for organisation and social groups to affect change, but still have a preference for finding my own capabilities and I think self-discipline will be required, even as member of an organized group. Writing things down, be it in essays like this or in short and long-term goals has been very helpful. 
 
 [back](/)
