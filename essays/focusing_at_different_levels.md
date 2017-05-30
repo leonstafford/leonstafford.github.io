@@ -39,7 +39,7 @@ Raising awareness, through repetitive exposure, is what has helped me. To this e
 
 Though what I learned at 20 was reinforced later when watching Dafur, I think it gets pushed to the back of my mind. Watching The Last Face recently brings it all back. Besides it being a beautiful love story, it raises awareness of such issues affecting the global "us". 
 
-I went on to listen to the BBC Documentary of [Southern Sudan, A Failure to Act](http://www.bbc.co.uk/programmes/p050skjh). 
+I went on to listen to the BBC Documentary of [Southern Sudan, A Failure to Act](http://www.bbc.co.uk/programmes/p050skjh) [Download mp3](http://open.live.bbc.co.uk/mediaselector/5/redir/version/2.0/mediaset/audio-nondrm-download/proto/http/vpid/p051dzjm.mp3). 
 
 At this point, I became a bit overwhelemed with thinking at the social level - "This really sucks. I need to do more. Why is it all so broken? How can I fix humanity?"
 
