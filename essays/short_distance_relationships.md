@@ -28,7 +28,7 @@ When my former marriage got to the point of 2 argumentative parents, it took som
 
 In the safe space of the internet, I'll admit to enjoying singing and dancing around the house. Well, this is the case usually when I'm living in my own bachelor pad. It can cross over to when my partner comes to visit, but when living together in a mutual space, I find these parts of me tend to get pushed to the background. Something to work on for sure - who doesn't want to dance around the house with their partner? But how many do?
 
-There are those other little things which couples find as friction points when moving in together - do the knives go on the left or the forks? Toilet paper hanging on the outside or inside of the holder? Clothes hang up or folded? First-world problems if ever there were, but points of debate, nonetheless.
+There are those other little things which couples find as friction points when moving in together - do the knives go on the left or the forks? Toilet paper hanging on the outside or inside of the holder? Clothes hung up or folded? First-world problems if ever there were, but points of debate, nonetheless.
 
 Does love require adjustments on each of these points in order to work? Would you not visit your partner in their own home simply because the cutlery arrangement was not to your pre-conditioned liking?
 
@@ -36,7 +36,7 @@ Does love require adjustments on each of these points in order to work? Would yo
 
 Studies of prisoners in extreme isolation have shown that most tend to develop any pre-disposed mental disorders. Rather than locking ourselves away and being alone, living on one's own while in a loving relationship may help to remind us of who we are. Having your own social group and activities, along with those shared by your partner helps define us. 
 
-How did you fall in meet? How did you fall in love? Where you already living together or did you have your own lives which was part of the attraction?
+How did you first meet? How did you fall in love? Where you already living together or did you have your own lives, which was part of the attraction?
 
 
 [back](/)
