@@ -2,7 +2,7 @@
 title: Short distance relationships
 ---
 
-# Short disatance relationships
+# Short distance relationships
 
 > Can't live with/out them ? live close to them
 
