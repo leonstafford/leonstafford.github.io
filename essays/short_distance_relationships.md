@@ -32,13 +32,11 @@ There are those other little things which couples find as friction points when m
 
 Does love require adjustments on each of these points in order to work? Would you not visit your partner in their own home simply because the cutlery arrangement was not to your pre-conditioned liking?
 
+### Not too self
 
+Studies of prisoners in extreme isolation have shown that most tend to develop any pre-disposed mental disorders. Rather than locking ourselves away and being alone, living on one's own while in a loving relationship may help to remind us of who we are. Having your own social group and activities, along with those shared by your partner helps define us. 
 
- - boundaries
- - reminder of each having their own live
- - indepence, not necessarily financially
-
-
+How did you fall in meet? How did you fall in love? Where you already living together or did you have your own lives which was part of the attraction?
 
 
 [back](/)
