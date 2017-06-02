@@ -32,48 +32,36 @@ Using words like selling and advertising still make me feel a little dirty. I th
 
 TV advertising sounds a little out of date now, but before the internet's dominance, this was a key way for advertisers to sell to the audience. At least in the United States, some brodcasters used to be required to air some quantity of Public Service Announcements (PSAs). And these usually ended up being broadcast in the times with the least amount of viewers. Because - money.
 
-financial reasons
+### Financial reasons
 
-the friend who wants to buy a new {insert gadget, car, etc} - the true cost/impact on other people's freedoms
+What is the reason we aren't all working for Greenpeace or sharing the harvesting on a kibbutz? Is it our belief that we need an ever unattainable amount of money? Is that why we compromised and took the job with McBurgers. Maybe we believed it was just a temporary gig, so we could just get to a future state where we can live true to our beliefs? 
 
+Naomi Klein's "No Logo" describes the big brand companies becoming "lifestyle companies", selling the companies image not only to the consumers, but also to their staff. Perhaps with enough colorful t-shirts, social mixers and corporate social responsibility projects, it is possible to keep staff content with not only some money, but also a belief that their sweatshop made products and hip software is for the common good. It did take me many years to walk away from the money (the belief in the products rarely lasted through the interview). I still earn a little from such a gig due to some of that self-compromising already mentioned, but with a clear plan to escape.
 
-the small tribe viewpoint vs supertribe
-pushing your own agenda
-PSAs
-dating
-non religious
-school of rhetoric
+### Telling friends what they don't want to hear
 
+With friends, we have a bit more room to tell them what we think is good for them, that they wouldn't likely accept from a complete stranger. A bit more room, but not a carte blanche to force your beliefs on them.
 
-### Staying withing firing range
+So, your friend wants to buy a new gadget/car/muscial toothbrush. You want them to not want to do that. How could this be achieved?
 
-Love's great marksman, Cupid, drew back his arrow, he didn't get into close quarters range for some Krav Maga nut shots.
+ - telling them they're wrong and an evil person
+ - giving them your gadget/car/musical toothbrush
+ - do nothing and compromise a little more of yourself
+ - educating them that their freedom to buy it has a real cost/impact on other people's freedoms
 
-TIL - The furthest recorded accurate shot in competitive archery was set at 283.47 metres in 2015. Definitely, people have maintained long distance relationships over greater distances than this. Likewise, other couples can thrive in a little love nest others would find claustrophobic. 
+The last one sounds great, but is not an easy task. I've used the example of a friend, but this applies to your small tribe of family and social peers as well as to the greater and global community you live in. You don't want to be unfriended by the world, do you? Better to be wrong and have friends than the be the only sane person who lives alone in a cave.
 
-Having launched volleys of love arrows at both extremities of this range, I don't seem to be able to hit my target with the right velocity.
+Just as killing someone who opposes what you believe in is an extreme reaction, so is doing nothing at all. Let's find somewhere around the middle of that dark-bright divide which is yin yang. 
 
-Dropping metaphors, I've found my comfort zone in relationships to be somewhere in the middle. Close enough to be in each other's lives, but not living on top of each other. Having the choice to spend each night together, but the freedom not to have to. We all might benefit from some "me time", and we mightn't realise this until we actually have some.
+### Same mistakes, bigger consequences
 
-### The great unlearning
+Persuading people has been in our toolkit ever since we didn't want to keep killing the guy standing between us and the watering hole. Historical records of it go back as far as 2285 BC. 
 
-Growing up in the West, under the surrogate supervision of old cartoons and Disney movies, one may get some values thrust upon them. Certainly, those of kindness and helping others are great. Those which influence our image of the ideal family can cause the most frustration later in life. We may have learned that some of those values, such as the suburban home dream, were driven by the fossil fuel industry, preferring people to commute by car to their place of work. By that token, one might expect advertisers to have pushed independent living over the single household nuclear family.
+Once developed, one can use it for the benefit of others or for their own selfish goals, depending on which way their moral compass is being blown by the spiritual winds.
 
-When my former marriage got to the point of 2 argumentative parents, it took some time to resist these programmed values and make the decision to separate. This separation was only a couple of blocks away and was a great improvement to the situation - 2 happy parents, setting an example of living their own lives. I was at the time in a position to support this financially, not everyone can afford that luxury, but everyone can afford to consider it. Once people have decided what they want, it can make achieving it all the more possible. 
+Not much has changed in human behaviour since those early days of rhetoric, but the world we live in and our depletion of the life sustaining resources in it may now require those with a belief in sustaining life to up their powers of persuasion.
 
-### No man is an island, but he can pretend he lives on one
-
-In the safe space of the internet, I'll admit to enjoying singing and dancing around the house. Well, this is the case usually when I'm living in my own bachelor pad. It can cross over to when my partner comes to visit, but when living together in a mutual space, I find these parts of me tend to get pushed to the background. Something to work on for sure - who doesn't want to dance around the house with their partner? But how many do?
-
-There are those other little things which couples find as friction points when moving in together - do the knives go on the left or the forks? Toilet paper hanging on the outside or inside of the holder? Clothes hung up or folded? First-world problems if ever there were, but points of debate, nonetheless.
-
-Does love require adjustments on each of these points in order to work? Would you not visit your partner in their own home simply because the cutlery arrangement was not to your pre-conditioned liking?
-
-### Not too self
-
-Studies of prisoners in extreme isolation have shown that most tend to develop any pre-disposed mental disorders. Rather than locking ourselves away and being alone, living on one's own while in a loving relationship may help to remind us of who we are. Having your own social group and activities, along with those shared by your partner helps define us. 
-
-How did you first meet? How did you fall in love? Where you already living together or did you have your own lives, which was part of the attraction?
+Even if we achieve this great raising of awareness amongst humanity the day before a great meteor wipes us out, we'll at least have had that one day of beauty.
 
 
 [back](/)

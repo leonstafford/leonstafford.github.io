@@ -37,6 +37,7 @@ Help [fund me on Patreon](https://www.patreon.com/leonstaffford), even $1 is a h
  - [What I believe](/essays/what_i_believe.html) Proofless acceptance and self-justification  
  - [Focusing at different levels](/essays/focusing_at_different_levels.md) Being social, spiritual or primal
  - [Short distance relationships](/essays/short_distance_relationships.md) Can't live with/out them ? live close to them
+ - [Persuasion for humanity](/essays/persuasion_for_humanity.md) Not all advertising has to be evil
 
 ## Online profiles/resume
 
