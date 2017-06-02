@@ -10,9 +10,9 @@ Wanting to share your beliefs without imposing on the freedom of others
 
 ### The healthy option
 
-Compromising on one's values can slowly eat away at one's sense of self, their confidence and their bility not to compromise in future situations. Perhaps this is contributing to global cases of mental health problems, in that we deep down can understand the effects of habitat destruction, but continue to compromise and consume the products which destroy it.
+Compromising on one's values can slowly eat away at their sense of self, their confidence and their ability not to compromise in future situations. Perhaps this is contributing to global cases of mental health problems, in that we deep down can understand the effects of habitat destruction, but continue to compromise and consume the products which destroy it.
 
-Maybe you've come to realise this, you're now less stressed, confident in your self and living in a way you believe is beneficial to others. 
+Maybe you've come to realise this, you're now less stressed, confident in yourself and living in a way you believe is beneficial to others. 
 
 But, what about your friend? Your family? The rest of the world? You want to help them to feel good about themselves, conserve our shared environment and help others. What's stopping you?
 
@@ -20,7 +20,7 @@ But, what about your friend? Your family? The rest of the world? You want to hel
 
 I know I've never appreciated people telling me what to think, let alone what to believe. I imagine most people are the same.
 
-Recently, I encountered a person who after a minute of chit chat, started to tell me I must believe in Jesus and pray for us all, then proceeded on a 20-minute one-way conversation about aliens, Beyonce, reptillian people and other interesting, though unlikely theories, such as the Large Hadron Collider being used to open a portal to the demonic underworld. 
+Recently, I encountered a person who, after a minute of chit chat, started to tell me I must believe in Jesus and pray for us all, then proceeded on a 20-minute one-way conversation about aliens, Beyonce, reptillian people and other interesting, though unlikely, theories, such as the Large Hadron Collider being used to open a portal to the demonic underworld. 
 
 Whilst a little alarming, I wasn't otherwise indisposed, so it was interesting to experience this person, so excited about their beliefs. 20 mins was enough though, so to much relief, after they left, my flatmate and I had a chat about it. We're not the sort of people to say they shouldn't have believed in what they did, but felt that if their intent was to convert me to their way of thinking, her approach was ineffective.
 
