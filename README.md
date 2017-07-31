@@ -38,6 +38,7 @@ Help [fund me on Patreon](https://www.patreon.com/leonstaffford), even $1 is a h
  - [Focusing at different levels](/essays/focusing_at_different_levels.md) Being social, spiritual or primal
  - [Short distance relationships](/essays/short_distance_relationships.md) Can't live with/out them ? live close to them
  - [Persuasion for humanity](/essays/persuasion_for_humanity.md) Not all advertising has to be evil
+ - [Business to feed the family](/essays/business_to_feed_the_family.md) Does the greed for extra profit margins cause more damage to the ecosystem? 
 
 ## Online profiles/resume
 
