@@ -6,18 +6,10 @@ It's never been fulfilling for me simply to make money and be a consumer. I see 
 
 We are at an era of massive wasteage, both of our natural resources and in our potential to create a world better than the one we came into.  
 
-### Available to NPO's as a Development Manager
+### Current ventures I'm involved with
 
-Currently doing some evil marketing work to pay the bills, whilst volunteering my time to [sleepbus.org](http://sleepbus.org) development, studying maths, programming and 3D animation and trying to advance open source projects.
-
-A role I'm undertaking again now and realizing how much I enjoy it is as a Development Manager for an NPO. This encompasses the following responsibilities:
-
- - being the "man in the middle" between the business and the software team
- - doing some programming/testing/infrastructure hands on work
- - refining the product backlog and ensuring development-ready tasks are available for developers
- - engaging with the development community to find and on-board volunteers
- - design and implement efficient processes for end to end development
- - most importantly, to help 
+ - [sleepbus.org](http://sleepbus.org) - I assist in the capacity of a Development Manager
+ - [BeautifulMoalboal](https://www.beautifulmoalboal.org) - Partner in a new social venture
 
 
 ## Online profiles/resume
