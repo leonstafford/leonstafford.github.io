@@ -2,9 +2,11 @@
 
 An almost 20 year veteran of the software industry, I thrive on technical challenges. 
 
+We are at an era of massive wasteage, both of our natural resources and in our potential to create a world better than the one we came into.  
+
 It's never been fulfilling for me simply to make money and be a consumer. I see problems and I fix them. I see inefficiencies and I optimise them.
 
-We are at an era of massive wasteage, both of our natural resources and in our potential to create a world better than the one we came into.  
+I'm fortunate to have been given the opportunity, knowledge and skills to make a difference - let's work together towards making the most of the world.  
 
 ### Current ventures I'm involved with
 
@@ -14,7 +16,7 @@ We are at an era of massive wasteage, both of our natural resources and in our p
 
 ## Online profiles/resume
 
- - [View online](https://careers.stackoverflow.com/cloud) or [Download as PDF](#)
+ - [View online](https://careers.stackoverflow.com/cloud) or [Download as PDF](/assets/Leon_Stafford_Technical_Professional.pdf)
 
 
 ### How can I help your organisation better affect change in the world?
