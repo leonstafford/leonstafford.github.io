@@ -1,4 +1,4 @@
-## Technology professional helping organisations create a better world
+## Technology professional trying to redeem myself through positive change
 
 An almost 20 year veteran of the software industry, I thrive on technical challenges. 
 
@@ -13,8 +13,12 @@ I'm fortunate to have been given the opportunity, knowledge and skills to make a
  - [sleepbus.org](http://sleepbus.org) - I assist in the capacity of a Development Manager
  - [BeautifulMoalboal](https://www.beautifulmoalboal.org) - Partner in a new social venture
 
+### Open source projects I maintain
 
-## Online profiles/resume
+ - [https://wordpress.org/plugins/static-html-output-plugin/]() WordPress Static HTML Output - a plugin to secure and speedup your WordPress install
+ - [WP Flexible CSV Importer](https://wordpress.org/plugins/wp-flexible-csv-importer/) Something that solved a problem for me and may help someone else
+
+### Online profiles/resume
 
  - [View online](https://careers.stackoverflow.com/cloud) or [Download as PDF](/assets/Leon_Stafford_Technical_Professional.pdf)
 
