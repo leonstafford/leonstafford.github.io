@@ -15,8 +15,8 @@ I'm fortunate to have been given the opportunity, knowledge and skills to make a
 
 ### Open source projects I maintain
 
- - [https://wordpress.org/plugins/static-html-output-plugin/]() WordPress Static HTML Output - a plugin to secure and speedup your WordPress install
- - [WP Flexible CSV Importer](https://wordpress.org/plugins/wp-flexible-csv-importer/) Something that solved a problem for me and may help someone else
+ - [WordPress Static HTML Output](https://wordpress.org/plugins/static-html-output-plugin/) - a plugin to secure and speedup your WordPress install
+ - [WP Flexible CSV Importer](https://wordpress.org/plugins/wp-flexible-csv-importer/) - something that solved a problem for me and may help someone else
 
 ### Online profiles/resume
 
