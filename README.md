@@ -11,7 +11,7 @@ Email me at [leonstafford@protonmail.com](mailto:leonstafford@protonmail.com) to
 
 ### My development tooling
 
-I write code in Vim. As per the sound advice from The Pragmattic Programmer, learn one text editor well, manipulating text is an every day thing. Aim to be good, be fast and enjoy it!
+I write code in [Vim](https://www.vim.org/). As per the sound advice from [The Pragmatic Programmer](https://en.wikipedia.org/wiki/The_Pragmatic_Programmer), learn one text editor well, manipulating text is an every day thing. Aim to be good, be fast and enjoy it!
 
 tmux gives me multiple terminal windows and panes within each window. 
 
