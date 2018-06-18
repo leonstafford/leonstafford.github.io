@@ -1,27 +1,23 @@
-## Open source developer with a knack for DevOps and automated testing
-
-An experienced hand in the software industry, he thrives on technical challenges. 
+## Open source developer specialising in static website performance optimisation
 
 I see problems and I fix them. I see inefficiencies and I optimise them.
 
-### Current ventures I'm involved with
-
- - [sleepbus.org](http://sleepbus.org) - helping a charity to maintain their web presence
- - [BeautifulMoalboal](https://www.beautifulmoalboal.org) - Partner in a new social venture cleaning up trash in the Philippines
-
-### Open source projects I maintain
-
- - [WordPress Static HTML Output](https://wordpress.org/plugins/static-html-output-plugin/) - a plugin to secure and speedup your WordPress install
- - [WP Flexible CSV Importer](https://wordpress.org/plugins/wp-flexible-csv-importer/) - something that solved a problem for me and may help someone else
-
-### Online profiles/resume
-
- - Leon Stafford - PHP Gun for Hire - Resume 2018 [Download as PDF](/assets/Leon%20Stafford%20-%20PHP%20Gun%20for%20Hire%20-%20Resume%202018.pdf)
+Creator of the [WordPress Static HTML Output](https://wordpress.org/plugins/static-html-output-plugin/) WordPress plugin - The optimum solution to speed up and secure your WordPress site – export to static HTML and hide all traces of WordPress from your site!
 
 
 ### Available for consulting work
 
-[Email me](mailto:lionhive@gmail.com) to discuss hiring me to solve your technical challenges. 
+Email me at [leonstafford@protonmail.com](mailto:leonstafford@protonmail.com) to discuss hiring me to solve your technical challenges. 
+
+### My development tooling
+
+I write code in Vim. As per the sound advice from The Pragmattic Programmer, learn one text editor well, manipulating text is an every day thing. Aim to be good, be fast and enjoy it!
+
+tmux gives me multiple terminal windows and panes within each window. 
+
+Git keeps my content under version control and, amongst many other things, prevents loss of data.
+
+Give me those 3 tools and I'm happy. They'll run on any PC from the last 20 years or older. 
 
 
 ### Essays
