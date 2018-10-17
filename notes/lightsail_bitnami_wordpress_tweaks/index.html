@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Leon Stafford">
+    <meta name="description" content="Bio site of developer">
+    <meta name="keywords" content="developer,bio,essays">
+
+    <base href="https://leonstafford.github.io/">
+    <title>
+  Tweaking the Bitnami WordPress Stack on AWS LightSail · Leon Stafford
+</title>
+
+    <link rel="canonical" href="https://leonstafford.github.io/notes/lightsail_bitnami_wordpress_tweaks/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.6130bcc37fe0899365dd962210d3a13994cf8c438aba750864bcaf4c548dc01a.css" integrity="sha256-YTC8w3/giZNl3ZYiENOhOZTPjEOKunUIZLyvTFSNwBo=" media="screen">
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://leonstafford.github.io/css/extra-styles.css">
+    
+
+    <link rel="icon" type="image/png" href="https://leonstafford.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://leonstafford.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.49.2" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://leonstafford.github.io/">
+      Leon Stafford
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="/notes/">Notes</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="/essays/">Essays</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Tweaking the Bitnami WordPress Stack on AWS LightSail</h1>
+    </header>
+
+    
+
+<p>Tired of clunkily updating a GitHub gist, herein lie my notes used when
+ provisioning an AWS LightSail instance with Bitnami WordPress for quick
+ prototyping or debugging.</p>
+
+<ul>
+<li><p>copy public key via the virtual terminal in AWS Console</p></li>
+
+<li><p>enable SSL</p></li>
+</ul>
+
+<p><a href="https://metablogue.com/enable-lets-encrypt-ssl-aws-lightsail/">https://metablogue.com/enable-lets-encrypt-ssl-aws-lightsail/</a></p>
+
+<ul>
+<li>disable mod pagespeed</li>
+</ul>
+
+<p><code>sudo vim /opt/bitnami/apache2/conf/pagespeed.conf</code></p>
+
+<ul>
+<li><p>backup wp-config somewhere</p></li>
+
+<li><p>copy files into WP dir</p></li>
+
+<li><p>replace wp-config</p></li>
+
+<li><p>replace site urls in wp-config</p></li>
+
+<li><p>rewrite any hard links within site
+<code>find -name '*.css' -exec sed -i 's/OLD.domain.com/NEW.wp2static.com/g' {} +</code>
+<code>wp search-replace 'OLD.domain.com' 'NEW.wp2static.com'</code></p></li>
+
+<li><p>reset file permissions</p></li>
+</ul>
+
+<pre><code>sudo chown -R bitnami:daemon /opt/bitnami/apps/wordpress/htdocs/
+sudo find /opt/bitnami/apps/wordpress/htdocs/ -type f -exec chmod 664 {} \;
+sudo find /opt/bitnami/apps/wordpress/htdocs/ -type d -exec chmod 775 {} \;
+</code></pre>
+
+<ul>
+<li><p>rm bitnami banner</p>
+
+<pre><code>sudo /opt/bitnami/apps/wordpress/bnconfig --disable_banner 1
+sudo /opt/bitnami/ctlscript.sh restart apache
+</code></pre></li>
+
+<li><p>enable debugging</p></li>
+</ul>
+
+<p><code>define( 'WP_DEBUG', true );</code></p>
+
+<p><strong>tailing WP logs</strong></p>
+
+<p><code>tail -f /opt/bitnami/apache2/logs/error_log</code></p>
+
+<p><strong>connect to db</strong></p>
+
+<p><code>mysql -u bn_wordpress -p bitnami_wordpress # and pwd from wp-config</code></p>
+
+<p><strong>check plugin options</strong></p>
+
+<p><code>select * from wp_options where option_name = 'wp-static-html-output-options' \G;</code></p>
+
+<ul>
+<li><code>working_directory</code> option can persist the old sever&rsquo;s paths</li>
+</ul>
+
+<p><strong>modify PHP ini</strong></p>
+
+<h1 id="not-yet-needed-seems-to-have-large-max-execution-time-already">not yet needed, seems to have large <code>max_execution_time</code> already</h1>
+
+<ul>
+<li>disable opcache</li>
+<li>disable mod pagespeed</li>
+<li>use development level error logging</li>
+</ul>
+
+<p><code>sudo vim opt/bitnami/php/etc/php.ini</code></p>
+
+<p><strong>Basic Auth</strong></p>
+
+<p><a href="https://docs.bitnami.com/google/apps/wordpress-multisite/administration/use-htpasswd/">https://docs.bitnami.com/google/apps/wordpress-multisite/administration/use-htpasswd/</a></p>
+
+<p><a href="/">back</a></p>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>I see inefficiencies and I optimize them</p>
+    
+     
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
