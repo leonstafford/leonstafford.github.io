@@ -17,15 +17,8 @@
       <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://leonstafford.github.io/notes/lightsail_bitnami_wordpress_tweaks/</guid>
-      <description>Tired of clunkily updating a GitHub gist, herein lie my notes used when provisioning an AWS LightSail instance with Bitnami WordPress for quick prototyping or debugging.
- copy public key via the virtual terminal in AWS Console
- enable SSL
-  https://metablogue.com/enable-lets-encrypt-ssl-aws-lightsail/
- disable mod pagespeed  sudo vim /opt/bitnami/apache2/conf/pagespeed.conf
- backup wp-config somewhere
- copy files into WP dir
- replace wp-config
- replace site urls in wp-config</description>
+      <description>Tired of clunkily updating a GitHub gist, herein lie my notes used when provisioning an AWS LightSail instance with Bitnami WordPress for quick migration/debugging of an existing user&amp;rsquo;s WordPress site.
+ copy public key via the virtual terminal in AWS Console set a DNS entry to point dev domain to the instance&amp;rsquo;s IP access site at dev domain rm bitnami banner  sudo /opt/bitnami/apps/wordpress/bnconfig --disable_banner 1 sudo /opt/bitnami/ctlscript.sh restart apache  SSH in using dev domain enable SSL  sudo mkdir /opt/bitnami/letsencrypt cd /opt/bitnami/letsencrypt sudo wget https://dl.</description>
     </item>
     
   </channel>

@@ -83,49 +83,104 @@
 
 <p>Tired of clunkily updating a GitHub gist, herein lie my notes used when
  provisioning an AWS LightSail instance with Bitnami WordPress for quick
- prototyping or debugging.</p>
+ migration/debugging of an existing user&rsquo;s WordPress site.</p>
 
 <ul>
-<li><p>copy public key via the virtual terminal in AWS Console</p></li>
-
-<li><p>enable SSL</p></li>
-</ul>
-
-<p><a href="https://metablogue.com/enable-lets-encrypt-ssl-aws-lightsail/">https://metablogue.com/enable-lets-encrypt-ssl-aws-lightsail/</a></p>
+<li>copy public key via the virtual terminal in AWS Console</li>
+<li>set a DNS entry to point dev domain to the instance&rsquo;s IP</li>
+<li>access site at dev domain</li>
+<li>rm bitnami banner
 
 <ul>
-<li>disable mod pagespeed</li>
-</ul>
-
-<p><code>sudo vim /opt/bitnami/apache2/conf/pagespeed.conf</code></p>
-
-<ul>
-<li><p>backup wp-config somewhere</p></li>
-
-<li><p>copy files into WP dir</p></li>
-
-<li><p>replace wp-config</p></li>
-
-<li><p>replace site urls in wp-config</p></li>
-
-<li><p>rewrite any hard links within site
-<code>find -name '*.css' -exec sed -i 's/OLD.domain.com/NEW.wp2static.com/g' {} +</code>
-<code>wp search-replace 'OLD.domain.com' 'NEW.wp2static.com'</code></p></li>
-
-<li><p>reset file permissions</p></li>
-</ul>
-
-<pre><code>sudo chown -R bitnami:daemon /opt/bitnami/apps/wordpress/htdocs/
-sudo find /opt/bitnami/apps/wordpress/htdocs/ -type f -exec chmod 664 {} \;
-sudo find /opt/bitnami/apps/wordpress/htdocs/ -type d -exec chmod 775 {} \;
-</code></pre>
+<li><code>sudo /opt/bitnami/apps/wordpress/bnconfig --disable_banner 1</code></li>
+<li><code>sudo /opt/bitnami/ctlscript.sh restart apache</code></li>
+</ul></li>
+<li>SSH in using dev domain</li>
+<li><a href="https://metablogue.com/enable-lets-encrypt-ssl-aws-lightsail/">enable SSL</a>
 
 <ul>
-<li><p>rm bitnami banner</p>
+<li><code>sudo mkdir /opt/bitnami/letsencrypt</code></li>
+<li><code>cd /opt/bitnami/letsencrypt</code></li>
+<li><code>sudo wget https://dl.eff.org/certbot-auto</code></li>
+<li><code>sudo chmod a+x ./certbot-auto</code></li>
+<li><code>sudo ./certbot-auto</code></li>
+<li><code>sudo ./certbot-auto certonly --webroot -w /opt/bitnami/apps/wordpress/htdocs/ -d example.com</code></li>
+<li><code>sudo ln -s /etc/letsencrypt/live/[DOMAIN]/fullchain.pem /opt/bitnami/apache2/conf/server.crt</code></li>
+<li><code>sudo ln -s /etc/letsencrypt/live/[DOMAIN]/privkey.pem /opt/bitnami/apache2/conf/server.key</code></li>
+<li>Make sure that the certificate file name and path is correct. If you receive an error that file already exists, use the below command to rename the files:</li>
+<li><code>mv /opt/bitnami/apache2/conf/server.key /opt/bitnami/apache2/conf/serverkey.old</code></li>
+<li><code>mv /opt/bitnami/apache2/conf/server.crt /opt/bitnami/apache2/conf/servercrt.old</code></li>
+<li><code>sudo /opt/bitnami/ctlscript.sh restart apache</code></li>
+</ul></li>
+<li>adjust wp-config to use https
 
-<pre><code>sudo /opt/bitnami/apps/wordpress/bnconfig --disable_banner 1
-sudo /opt/bitnami/ctlscript.sh restart apache
-</code></pre></li>
+<ul>
+<li><code>sed -i 's/http/https/' /opt/bitnami/apps/wordpress/htdocs/wp-config.php</code></li>
+<li><code>sudo chown -R bitnami:daemon /opt/bitnami/apps/wordpress/htdocs/</code></li>
+</ul></li>
+<li>force https in top of file: <code>/opt/bitnami/apps/wordpress/conf/httpd-prefix.conf</code>
+
+<ul>
+<li><code>RewriteEngine On</code></li>
+<li><code>RewriteCond %{HTTPS} !=on</code></li>
+<li><code>RewriteRule ^/(.*) https://%{SERVER_NAME}/$1 [R,L]</code></li>
+</ul></li>
+<li>Restart server to enforce https
+
+<ul>
+<li><code>sudo /opt/bitnami/ctlscript.sh restart apache</code></li>
+</ul></li>
+<li>backup wp-config somewhere
+
+<ul>
+<li><code>sudo cp /opt/bitnami/apps/wordpress/htdocs/wp-config.php /opt/bitnami/apps/wordpress/wp-config-backup-randstring.php</code></li>
+</ul></li>
+<li>disable mod pagespeed
+
+<ul>
+<li><code>sudo vim /opt/bitnami/apache2/conf/pagespeed.conf</code></li>
+<li><code>ModPagespeed on</code> &gt; <code>ModPagespeed off</code></li>
+<li><code>sudo /opt/bitnami/ctlscript.sh restart apache</code></li>
+</ul></li>
+<li>copy existing site&rsquo;s files into WP dir</li>
+<li>backup existing wp-config
+
+<ul>
+<li><code>sudo cp /opt/bitnami/apps/wordpress/htdocs/wp-config.php /opt/bitnami/apps/wordpress/user-original-wp-config-backup-randstring.php</code></li>
+</ul></li>
+<li>restore Bitnami&rsquo;s wp-config</li>
+<li>copy any custom <code>define</code>&rsquo;s or code from existing wp-config</li>
+<li>import users DB
+
+<ul>
+<li>delete bitnami_wordpress</li>
+<li>create bitnami_wordpress</li>
+<li>import .sql</li>
+</ul></li>
+<li>rewrite any hard links within DB
+
+<ul>
+<li><code>sudo wp --allow-root search-replace 'OLD.domain.com' 'NEW.wp2static.com'</code></li>
+</ul></li>
+<li>change admin user email and pwd
+
+<ul>
+<li><code>sudo wp --allow-root user update 1 --user_pass=&quot;PASSWORD&quot;</code></li>
+</ul></li>
+<li>rewrite any hard links within site (optional, careful of mailto links, etc)
+
+<ul>
+<li><code>find -name '*.css' -exec sed -i 's/OLD.domain.com/NEW.wp2static.com/g' {} +</code></li>
+</ul></li>
+
+<li><p>reset file permissions</p>
+
+<ul>
+<li><code>sudo chown -R bitnami:daemon /opt/bitnami/apps/wordpress/htdocs/</code></li>
+<li><code>sudo find /opt/bitnami/apps/wordpress/htdocs/ -type f -exec chmod 664 {} \;</code></li>
+<li><code>sudo find /opt/bitnami/apps/wordpress/htdocs/ -type d -exec chmod 775 {} \;</code></li>
+<li>also php-fpm restart <code>sudo /opt/bitnami/ctlscript.sh restart php-fpm</code></li>
+</ul></li>
 
 <li><p>enable debugging</p></li>
 </ul>
@@ -156,6 +211,8 @@ sudo /opt/bitnami/ctlscript.sh restart apache
 <li>disable opcache</li>
 <li>disable mod pagespeed</li>
 <li>use development level error logging</li>
+<li>increase memory</li>
+<li>extend max execution time</li>
 </ul>
 
 <p><code>sudo vim opt/bitnami/php/etc/php.ini</code></p>
@@ -175,6 +232,13 @@ sudo /opt/bitnami/ctlscript.sh restart apache
 <p><code>curl https://gist.githubusercontent.com/leonstafford/6891b76aeaf43766dd52676d6bed1b08/raw/9979e28a9abf07af94b505d35ff9a4eb3da7cb9f/.tmux.conf --output ~/.tmux.conf</code></p>
 
 <p><code>curl https://gist.githubusercontent.com/leonstafford/39333da3399adee7e88cb869b4685dff/raw/5e6e7b7fb834d996763da3d358d949d309691350/.vimrc --output ~/.vimrc</code></p>
+
+<p>not working without additional domain verification overrides:
+ - enable mail sending (consider Amazon has a limit for LightSail) not verified, erros with
+  - <code>sudo apt install sendmail</code>
+  - <code>sudo vim opt/bitnami/php/etc/php.ini</code>
+  - uncomment <code>sendmail_path = &quot;env -i /usr/sbin/sendmail -t -i&quot;</code>
+  - <code>sudo /opt/bitnami/ctlscript.sh restart apache</code></p>
 
 <p><a href="/">back</a></p>
 
