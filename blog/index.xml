@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Leon Stafford</title>
+    <link>https://leonstafford.github.io/blog/</link>
+    <description>Recent content in Blogs on Leon Stafford</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://leonstafford.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WordCamp Brisbane 2018 - WordPress as a Static Site Generator</title>
+      <link>https://leonstafford.github.io/blog/wordcamp_brisbane_2018_wordpress_as_a_static_site_generator/</link>
+      <pubDate>Mon, 29 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://leonstafford.github.io/blog/wordcamp_brisbane_2018_wordpress_as_a_static_site_generator/</guid>
+      <description>In a tired, but inspired state, after attending this weekend&amp;rsquo;s WordCamp Brisbane 2018.
+Got to start with a big shout-out to all of the organizers, volunteers, speakers and attendees - THANK YOU!
+I&amp;rsquo;m far from a WordPress fanboi - I regularly talk people out of using self-hosted WordPress. As a tech industry professional, I feel responsible to not push everyone to use a certain technology unless it makes sense. For someone who isn&amp;rsquo;t interested in learning development and being responsible for security and performance of their server (or willing to pay someone else to be), I&amp;rsquo;d much sooner advise them to check-out a hosted platform, be it WordPress.</description>
+    </item>
+    
+  </channel>
+</rss>

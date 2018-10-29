@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://leonstafford.github.io/blog/wordcamp_brisbane_2018_wordpress_as_a_static_site_generator/</loc>
+    <lastmod>2018-10-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://leonstafford.github.io/notes/lightsail_bitnami_wordpress_tweaks/</loc>
     <lastmod>2018-10-17T00:00:00+00:00</lastmod>
   </url>
@@ -42,6 +47,12 @@
   </url>
   
   <url>
+    <loc>https://leonstafford.github.io/blog/</loc>
+    <lastmod>2018-10-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://leonstafford.github.io/categories/</loc>
     <priority>0</priority>
   </url>
@@ -54,7 +65,7 @@
   
   <url>
     <loc>https://leonstafford.github.io/</loc>
-    <lastmod>2018-10-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

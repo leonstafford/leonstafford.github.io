@@ -2,3 +2,10 @@
   -webkit-filter: grayscale(100%);
   filter: grayscale(28%);
 }
+
+
+@media screen and (min-width:800px){
+  article img {
+    float: left;
+  }
+}
