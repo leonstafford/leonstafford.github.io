@@ -6,9 +6,46 @@
     <description>Recent content in Tags on Leon Stafford</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 07 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://leonstafford.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git</title>
+      <link>https://leonstafford.github.io/tags/git/</link>
+      <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://leonstafford.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Openbsd</title>
+      <link>https://leonstafford.github.io/tags/openbsd/</link>
+      <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://leonstafford.github.io/tags/openbsd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tmux</title>
+      <link>https://leonstafford.github.io/tags/tmux/</link>
+      <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://leonstafford.github.io/tags/tmux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://leonstafford.github.io/tags/vim/</link>
+      <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://leonstafford.github.io/tags/vim/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

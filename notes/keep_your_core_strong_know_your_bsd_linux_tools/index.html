@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Leon Stafford">
+    <meta name="description" content="Bio site of developer">
+    <meta name="keywords" content="developer,bio,essays">
+
+    <base href="https://leonstafford.github.io/">
+    <title>
+  Keep Your Core Strong - Know Your BSD/Linux Tools · Leon Stafford
+</title>
+
+    <link rel="canonical" href="https://leonstafford.github.io/notes/keep_your_core_strong_know_your_bsd_linux_tools/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.6130bcc37fe0899365dd962210d3a13994cf8c438aba750864bcaf4c548dc01a.css" integrity="sha256-YTC8w3/giZNl3ZYiENOhOZTPjEOKunUIZLyvTFSNwBo=" media="screen">
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://leonstafford.github.io/css/extra-styles.css">
+    
+
+    <link rel="icon" type="image/png" href="https://leonstafford.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://leonstafford.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.49" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://leonstafford.github.io/">
+      Leon Stafford
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="/blog/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="/essays/">Essays</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Keep Your Core Strong - Know Your BSD/Linux Tools</h1>
+    </header>
+
+    
+
+<p>Just as the sage advice from <a href="https://pragprog.com/book/tpp/the-pragmatic-programmer">The Pragmattic Programmer</a> on mastering one text editor makes so much sense for those of us whose majority of work is rearranging bits on the digital titanic, the same holds true for knowing your operating system and investing in solid tooling for your other main productivite tasks.</p>
+
+<h3 id="opinionated-preface-open-source-or-gtfo">Opinionated preface - Open source or GTFO</h3>
+
+<p>The world&rsquo;s resources are quickly depleting. A growing population having to work sh!tty jobs for sh!tty companies selling sh!tty stuff is not sustainable and kinda hard to keep respecting yourself as a highly paid developer building yet another duplicated piece of software on VC funds.</p>
+
+<p>If the aim is to advance humanity and avoid depleting all the resources as population explodes, then we should be looking to re-use and not create uneccessarily. Open source software that&rsquo;s been continually refined since the 60&rsquo;s/70&rsquo;s is continually being optimized and is able to run well on older hardware.</p>
+
+<p>We don&rsquo;t need another One Laptop Per Child creating future ewaste when we already have an abundance of capable hardware. Let&rsquo;s stop making batteries full of costly/harful chemicals and get more solar to continue running old laptops after their batteries have died.</p>
+
+<h3 id="on-with-the-show-the-core-utilities-i-invest-in-learning-well">On with the show - the core utilities I invest in learning well</h3>
+
+<p>This page serves a purpose to me as storing minimal configuration notes. I strive to not become dependent on too much customisation for the reasons:</p>
+
+<ul>
+<li>portability: the benefit of these tools are their ubiquitousness, I want the ability to grab any available device and quickly be productive without a day of setup or requiring of internet to pull down convoluted dotfiles libraries</li>
+<li>learn the tool well: you may be working around the original design of the software. If it&rsquo;s really not there, consider contributing it to the project, or if it doesn&rsquo;t belong there, look for another modular program to handle that responsibility</li>
+</ul>
+
+<h4 id="openbsd">OpenBSD</h4>
+
+<p>Slow is smooth and smooth is fast. Forgoing the bells, whistles and kitchen sink included in most Linux distros, OpenBSD has been planned with security and quality in mind. You&rsquo;re not forced to read the docs, but you&rsquo;ll soon realize it&rsquo;s the most efficent path forward.</p>
+
+<p>Amazing support for older architectures and a great welcoming community.</p>
+
+<h3 id="vim">Vim</h3>
+
+<p>My minimal .vimrc</p>
+
+<pre><code class="language-vimscript">set ts=2 sw=2 expandtab ruler nu noswapfile colorcolumn=80                      
+syntax on                                                                       
+colorscheme delek                                                               
+                                                                                
+autocmd Filetype php setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4       
+autocmd Filetype js setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2        
+                                                                                
+highlight ExtraWhitespace ctermbg=red guibg=red                                 
+match ExtraWhitespace /\s\+$/   
+
+&quot; newly acquired skills
+set wildmenu &quot; show search reuslts and such as popups
+set path+=** &quot; set path to this folder and all subdirs, ie for searching
+
+</code></pre>
+
+<h3 id="git">git</h3>
+
+<p>My minimal .gitconfig</p>
+
+<pre><code>
+</code></pre>
+
+<h3 id="tmux">tmux</h3>
+
+<p>My minimal .tmux.conf</p>
+
+<pre><code># moving between panes
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# large history limit
+set -g history-limit 999999999
+</code></pre>
+
+<h3 id="coreutils">coreutils</h3>
+
+<p>Refer to the excellent man pages provided by OpenBSD or take a chance with the docs from whatever other OS you&rsquo;re using.</p>
+
+<p>My minimal shell profile (bash by default)</p>
+
+<pre><code># enable viewing media offline
+</code></pre>
+
+<p><a href="/">back</a></p>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>I see inefficiencies and I optimize them</p>
+    
+     
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

@@ -6,10 +6,20 @@
     <description>Recent content on Leon Stafford</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://leonstafford.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Keep Your Core Strong - Know Your BSD/Linux Tools</title>
+      <link>https://leonstafford.github.io/notes/keep_your_core_strong_know_your_bsd_linux_tools/</link>
+      <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://leonstafford.github.io/notes/keep_your_core_strong_know_your_bsd_linux_tools/</guid>
+      <description>Just as the sage advice from The Pragmattic Programmer on mastering one text editor makes so much sense for those of us whose majority of work is rearranging bits on the digital titanic, the same holds true for knowing your operating system and investing in solid tooling for your other main productivite tasks.
+Opinionated preface - Open source or GTFO The world&amp;rsquo;s resources are quickly depleting. A growing population having to work sh!</description>
+    </item>
     
     <item>
       <title>WordCamp Brisbane 2018 - WordPress as a Static Site Generator</title>
@@ -28,8 +38,9 @@ I&amp;rsquo;m far from a WordPress fanboi - I regularly talk people out of using
       <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://leonstafford.github.io/notes/lightsail_bitnami_wordpress_tweaks/</guid>
-      <description>Tired of clunkily updating a GitHub gist, herein lie my notes used when provisioning an AWS LightSail instance with Bitnami WordPress for quick migration/debugging of an existing user&amp;rsquo;s WordPress site.
- copy public key via the virtual terminal in AWS Console set a DNS entry to point dev domain to the instance&amp;rsquo;s IP access site at dev domain rm bitnami banner  sudo /opt/bitnami/apps/wordpress/bnconfig --disable_banner 1 sudo /opt/bitnami/ctlscript.sh restart apache  SSH in using dev domain enable SSL  sudo mkdir /opt/bitnami/letsencrypt cd /opt/bitnami/letsencrypt sudo wget https://dl.</description>
+      <description>Update:
+I no longer use Bitnami on AWS LightSail due to the steps required to get sane application behaviour and performance are not worth it. Leaving this up for any searches leading here and will recommend for a similar level of serviced hosting, try DigitalOcean or Vultr.
+Tired of clunkily updating a GitHub gist, herein lie my notes used when provisioning an AWS LightSail instance with Bitnami WordPress for quick migration/debugging of an existing user&amp;rsquo;s WordPress site.</description>
     </item>
     
     <item>

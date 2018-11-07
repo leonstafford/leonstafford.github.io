@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://leonstafford.github.io/notes/keep_your_core_strong_know_your_bsd_linux_tools/</loc>
+    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://leonstafford.github.io/blog/wordcamp_brisbane_2018_wordpress_as_a_static_site_generator/</loc>
     <lastmod>2018-10-29T00:00:00+00:00</lastmod>
   </url>
@@ -64,19 +69,44 @@
   </url>
   
   <url>
+    <loc>https://leonstafford.github.io/tags/git/</loc>
+    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://leonstafford.github.io/</loc>
-    <lastmod>2018-10-29T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://leonstafford.github.io/notes/</loc>
-    <lastmod>2018-10-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://leonstafford.github.io/tags/openbsd/</loc>
+    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://leonstafford.github.io/tags/</loc>
+    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://leonstafford.github.io/tags/tmux/</loc>
+    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://leonstafford.github.io/tags/vim/</loc>
+    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
