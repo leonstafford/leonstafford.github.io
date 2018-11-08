@@ -154,6 +154,20 @@ set -g history-limit 999999999
 <p>My minimal shell profile (bash by default)</p>
 
 <pre><code># enable viewing media offline
+function dla {                                                                  
+    # dl searched song to mp3                                                   
+    youtube-dl --extract-audio --no-mtime --audio-format mp3 --no-playlist --default-search ytsearch -o &quot;~/Music/%(title)s.%(ext)s&quot; &quot;$*&quot; 
+    if [ $? -eq 0 ]; then                                                       
+      # send newest file to smplayer playlist                                   
+      LATEST_FILE=$(ls -t *.mp3 | head -1)                                      
+      smplayer -add-to-playlist &quot;$LATEST_FILE&quot;                                  
+    else                                                                        
+        echo &quot;failed to download&quot;                                               
+    fi                                                                          
+} 
+
+# usage
+dla some title with spaces no need to surround with quotes
 </code></pre>
 
 <p><a href="/">back</a></p>
