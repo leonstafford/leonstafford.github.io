@@ -106,6 +106,20 @@
 
 <p>Amazing support for older architectures and a great welcoming community.</p>
 
+<h3 id="japanese-support">Japanese support</h3>
+
+<p>Install relevant fcitx packages</p>
+
+<p>Install  <code>ja-sazanami-ttf</code></p>
+
+<p>edit <code>$HOME/.config/fcitx/profile</code>, changing <code>anthy:False</code> to <code>anthy:True</code></p>
+
+<p>set shortcut key in <code>$HOME/.config/fcitx/config</code></p>
+
+<p>set XMODIFIERS in .xsession, along with fcitx-autostart before cwm</p>
+
+<p>xset fontpath</p>
+
 <h3 id="vim">Vim</h3>
 
 <p>My minimal .vimrc</p>
@@ -145,6 +159,95 @@ bind l select-pane -R
 
 # large history limit
 set -g history-limit 999999999
+</code></pre>
+
+<h3 id="httpd">httpd</h3>
+
+<h1 id="httpd-conf">httpd.conf</h1>
+
+<p>basic example</p>
+
+<pre><code>prefork 10
+
+types { include &quot;/usr/share/misc/mime.types&quot; }
+
+server &quot;localhost&quot; {
+	listen on * port 80
+
+	directory index &quot;index.php&quot;
+
+	root &quot;/htdocs&quot;
+
+	location &quot;/*.css*&quot; {
+		request no rewrite
+	}
+
+	location &quot;/*.js*&quot; {
+		request no rewrite
+	}
+
+	location &quot;/*.png*&quot; {
+		request no rewrite
+	}
+
+	location &quot;/mystaticsite*&quot; {
+		directory index &quot;index.html&quot;
+		request no rewrite
+	}
+
+	location &quot;/*.php*&quot; {
+		fastcgi socket &quot;/run/php-fpm.sock&quot;
+	}
+
+	location &quot;/posts*&quot; {
+		fastcgi socket &quot;/run/php-fpm.sock&quot;
+	}
+}
+</code></pre>
+
+<h1 id="wp">WP</h1>
+
+<h1 id="file-permissions">file permissions</h1>
+
+<p>TODO: currently 777&rsquo;ing locally to allow watch script</p>
+
+<pre><code>find /var/www/htdocs -type d -exec chmod 775 {} \;
+find /var/www/htdocs -type f -exec chmod 755 {} \;
+chmod 400 /var/www/htdocs/wp-config.php
+</code></pre>
+
+<h1 id="watch-files">watch files</h1>
+
+<p>watch_me_sync.sh</p>
+
+<pre><code>#!/bin/sh                                                                       
+while :                                                                         
+do                                                                              
+    find $HOME/wordpress-static-html-plugin/ -type f ! -path '*/.*' |           
+    entr -d  sh $HOME/deploy_changed_file.sh /_                                 
+done 
+</code></pre>
+
+<p>deploy_changes_file.sh</p>
+
+<pre><code>#!/bin/sh                                                                       
+                                                                                
+CHANGED_FILE=$1                                                                 
+PROJECT_DIR=$HOME/wordpress-static-html-plugin/                                 
+BASENAME=${CHANGED_FILE#&quot;$PROJECT_DIR&quot;}                                         
+TARGET_PATH=/var/www/htdocs/wp-content/plugins/wordpress-static-html-plugin/${CHANGED_FILE#&quot;$PROJECT_DIR&quot;}
+TARGET_PATH2=/var/www/htdocs/securesite.local/wp-content/plugins/wordpress-static-html-plugin/${CHANGED_FILE#&quot;$PROJECT_DIR&quot;}
+TARGET_PATH3=/var/www/htdocs/subdirsite.local/wordpress/wp-content/plugins/wordpress-static-html-plugin/${CHANGED_FILE#&quot;$PROJECT_DIR&quot;}
+TARGET_PATH4=/var/www/htdocs/japanesesite.local/wp-content/plugins/wordpress-static-html-plugin/${CHANGED_FILE#&quot;$PROJECT_DIR&quot;}
+                                                                                
+echo &quot;$BASENAME&quot;                                                                
+                                                                                
+cp $CHANGED_FILE $TARGET_PATH                                                   
+cp $CHANGED_FILE $TARGET_PATH2                                                  
+cp $CHANGED_FILE $TARGET_PATH3                                                  
+cp $CHANGED_FILE $TARGET_PATH4                                                  
+                                                                                
+echo '' 
 </code></pre>
 
 <h3 id="coreutils">coreutils</h3>
