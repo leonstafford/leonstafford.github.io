@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Leon Stafford</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://leonstafford.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Elementor</title>
+      <link>https://leonstafford.github.io/tags/elementor/</link>
+      <pubDate>Sat, 24 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://leonstafford.github.io/tags/elementor/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Empowerment</title>
@@ -48,6 +57,15 @@
     </item>
     
     <item>
+      <title>Snipcart</title>
+      <link>https://leonstafford.github.io/tags/snipcart/</link>
+      <pubDate>Sat, 24 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://leonstafford.github.io/tags/snipcart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tmux</title>
       <link>https://leonstafford.github.io/tags/tmux/</link>
       <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
@@ -62,6 +80,15 @@
       <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://leonstafford.github.io/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wordpress</title>
+      <link>https://leonstafford.github.io/tags/wordpress/</link>
+      <pubDate>Sat, 24 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://leonstafford.github.io/tags/wordpress/</guid>
       <description></description>
     </item>
     

@@ -6,10 +6,22 @@
     <description>Recent content in Notes on Leon Stafford</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://leonstafford.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Getting Snipcart custom data attributes into WordPress &#43; Elementor Pricing Table</title>
+      <link>https://leonstafford.github.io/notes/wordpress-elementor-snipcart-rewrite/</link>
+      <pubDate>Sat, 24 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://leonstafford.github.io/notes/wordpress-elementor-snipcart-rewrite/</guid>
+      <description>After shunning pagebuilders in WordPress long enough, I gave Elementor a try for a landing page layout and found it quite useful. I also realized how terribly far behind Gutenberg is!
+So, Elementor got me 90% of the way there, as is often the case in WordPress - simple, until it isn&amp;rsquo;t!
+Custom code in the theme&amp;rsquo;s functions.php got the last piece of the puzzle:
+function wp2static_snipcart_callback($buffer) { $html_output = $buffer; $dom = new DOMDocument(); $dom-&amp;gt;loadHTML($html_output); $finder = new DomXPath($dom); $classname=&amp;quot;elementor-price-table__button&amp;quot;; $nodes = $finder-&amp;gt;query(&amp;quot;//*[contains(@class, &#39;$classname&#39;)]&amp;quot;); $yearly_buy_button = $nodes-&amp;gt;item(1); $yearly_buy_button-&amp;gt;setAttribute(&#39;class&#39;,&#39;elementor-price-table__button elementor-button elementor-size-md snipcart-add-item&#39;); $yearly_buy_button-&amp;gt;setAttribute(&#39;data-item-name&#39;,&#39;PowerPack, unlimited sites, yearly&#39;); $yearly_buy_button-&amp;gt;setAttribute(&#39;data-item-id&#39;,&#39;powerpack-unlimited-yearly&#39;); $yearly_buy_button-&amp;gt;setAttribute(&#39;data-item-url&#39;,&#39;https://securityandperformance.</description>
+    </item>
     
     <item>
       <title>Low footprint tech hub</title>

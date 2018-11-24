@@ -11,10 +11,10 @@
 
     <base href="https://leonstafford.github.io/">
     <title>
-  Tags · Leon Stafford
+  Getting Snipcart custom data attributes into WordPress &#43; Elementor Pricing Table · Leon Stafford
 </title>
 
-    <link rel="canonical" href="https://leonstafford.github.io/tags/">
+    <link rel="canonical" href="https://leonstafford.github.io/notes/wordpress-elementor-snipcart-rewrite/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
@@ -35,9 +35,6 @@
     <link rel="icon" type="image/png" href="https://leonstafford.github.io/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://leonstafford.github.io/images/favicon-16x16.png" sizes="16x16">
 
-    
-      <link href="https://leonstafford.github.io/tags/index.xml" rel="alternate" type="application/rss+xml" title="Leon Stafford" />
-      <link href="https://leonstafford.github.io/tags/index.xml" rel="feed" type="application/rss+xml" title="Leon Stafford" />
     
 
     <meta name="generator" content="Hugo 0.49" />
@@ -76,54 +73,56 @@
 
       <div class="content">
         
-  <section class="container list">
-  <h1 class="title">Tags</h1>
-  <ul>
-    
-    <li>
-      <span>November 24, 2018</span><a href="/tags/elementor/">Elementor</a>
-    </li>
-    
-    <li>
-      <span>November 12, 2018</span><a href="/tags/empowerment/">Empowerment</a>
-    </li>
-    
-    <li>
-      <span>November 7, 2018</span><a href="/tags/git/">Git</a>
-    </li>
-    
-    <li>
-      <span>November 12, 2018</span><a href="/tags/low-footprint/">Low Footprint</a>
-    </li>
-    
-    <li>
-      <span>November 7, 2018</span><a href="/tags/openbsd/">Openbsd</a>
-    </li>
-    
-    <li>
-      <span>November 24, 2018</span><a href="/tags/snipcart/">Snipcart</a>
-    </li>
-    
-    <li>
-      <span>November 7, 2018</span><a href="/tags/tmux/">Tmux</a>
-    </li>
-    
-    <li>
-      <span>November 7, 2018</span><a href="/tags/vim/">Vim</a>
-    </li>
-    
-    <li>
-      <span>November 24, 2018</span><a href="/tags/wordpress/">Wordpress</a>
-    </li>
-    
-  </ul>
-  
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Getting Snipcart custom data attributes into WordPress &#43; Elementor Pricing Table</h1>
+    </header>
 
+    <p>After shunning pagebuilders in WordPress long enough, I gave Elementor a try for a landing page layout and found it quite useful. I also realized how terribly far behind Gutenberg is!</p>
 
+<p>So, Elementor got me 90% of the way there, as is often the case in WordPress - simple, until it isn&rsquo;t!</p>
 
+<p>Custom code in the theme&rsquo;s <code>functions.php</code> got the last piece of the puzzle:</p>
 
+<pre><code class="language-php">function wp2static_snipcart_callback($buffer) {
+   $html_output = $buffer;
 
+   $dom = new DOMDocument();
+   $dom-&gt;loadHTML($html_output);
 
+   $finder = new DomXPath($dom);
+   $classname=&quot;elementor-price-table__button&quot;;
+   $nodes = $finder-&gt;query(&quot;//*[contains(@class, '$classname')]&quot;);
+
+   $yearly_buy_button = $nodes-&gt;item(1);
+
+   $yearly_buy_button-&gt;setAttribute('class','elementor-price-table__button elementor-button elementor-size-md snipcart-add-item');                                                                
+   $yearly_buy_button-&gt;setAttribute('data-item-name','PowerPack, unlimited sites, yearly');
+   $yearly_buy_button-&gt;setAttribute('data-item-id','powerpack-unlimited-yearly');
+   $yearly_buy_button-&gt;setAttribute('data-item-url','https://securityandperformance.com/');
+   $yearly_buy_button-&gt;setAttribute('data-item-price','99.00');
+   $yearly_buy_button-&gt;setAttribute('data-item-payment-interval','Year');
+   $yearly_buy_button-&gt;setAttribute('data-item-payment-interval-count','1');
+
+   $unlimited_buy_button = $nodes-&gt;item(2);
+
+   $unlimited_buy_button-&gt;setAttribute('class','elementor-price-table__button elementor-button elementor-size-md snipcart-add-item');                                                             
+   $unlimited_buy_button-&gt;setAttribute('data-item-name','PowerPack, unlimited sites, lifetime');
+   $unlimited_buy_button-&gt;setAttribute('data-item-id','powerpack-unlimited-lifetime');
+   $unlimited_buy_button-&gt;setAttribute('data-item-url','https://securityandperformance.com/');
+   $unlimited_buy_button-&gt;setAttribute('data-item-price','299.00');
+
+   return $dom-&gt;saveHTML();
+}
+
+add_filter( 'the_content', 'wp2static_snipcart_callback' );
+
+</code></pre>
+
+<p><a href="/">back</a></p>
+
+  </article>
 </section>
 
 
