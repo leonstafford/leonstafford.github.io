@@ -303,7 +303,11 @@ isp@cingulargprs.com    *       CINGULAR1
 
 </code></pre>
 
-<p>Finally, run <code>ifconfig ppp0 create</code> (should be showing in ifconfig now) and then <code>pppd e3372 call</code></p>
+<p>Finally, run</p>
+
+<p><code>ifconfig ppp0 create</code> (should be showing in ifconfig now) and then</p>
+
+<p><code>pppd e3372 call</code></p>
 
 <p>This doesn&rsquo;t give me much, so I tail <code>/var/log/daemon</code>, resulting in:</p>
 
@@ -311,6 +315,134 @@ isp@cingulargprs.com    *       CINGULAR1
 Dec 13 13:09:29 obsd pppd[80914]: ioctl(TIOCSETD): Device not configured
 
 </code></pre>
+
+<p>A clue, when I try to manually talk to the modem, <code>cu -s 115200 -l cuaU0</code>, I get device is busy. So I stop the smsd daemon and try again:</p>
+
+<p>This time, it connects, but nothing is given back&hellip;whereas previously, I think I was able to type commands over the serial connection&hellip;</p>
+
+<p>To isolate the cause, I duplicated the peers/e3372 file with another with just these lines</p>
+
+<p>/etc/ppp/peers/dummytest</p>
+
+<pre><code>cuaU0
+115200
+debug
+</code></pre>
+
+<p>which got me one more line in the output:</p>
+
+<pre><code>Dec 13 13:40:24 obsd pppd[46299]: pppd 2.3.5 started by leon, uid 0
+Dec 13 13:40:27 obsd pppd[46299]: Serial connection established.
+Dec 13 13:40:28 obsd pppd[46299]: ioctl(TIOCSETD): Device not configured
+</code></pre>
+
+<p>I&rsquo;m also seeing the device being disconnected at hangup and then re-detected:</p>
+
+<pre><code>Dec 13 13:40:32 obsd /bsd: ucom0 detached
+Dec 13 13:40:32 obsd /bsd: umsm0 detached
+Dec 13 13:40:32 obsd /bsd: umsm1 detached
+Dec 13 13:40:39 obsd /bsd: umsm0 at uhub0 port 2 configuration 1 interface 0 &quot;HUAWEI_MOBILE HUAWEI_MOBILE&quot; rev 2.10/1.02 addr 2                                                                   
+Dec 13 13:40:39 obsd /bsd: umsm0 detached
+Dec 13 13:40:39 obsd /bsd: umsm0 at uhub0 port 2 configuration 1 interface 0 &quot;HUAWEI_MOBILE HUAWEI_MOBILE&quot; rev 2.10/1.02 addr 2                                                                   
+Dec 13 13:40:39 obsd /bsd: ucom0 at umsm0
+Dec 13 13:40:39 obsd /bsd: umsm1 at uhub0 port 2 configuration 1 interface 1 &quot;HUAWEI_MOBILE HUAWEI_MOBILE&quot; rev 2.10/1.02 addr 2
+</code></pre>
+
+<p>So will continue adjusting that file or the ones it links to and see if we get any more output&hellip;</p>
+
+<p>Trying <code>cu</code> again, allowed some commands to come back from the modem, but no input was accepted:</p>
+
+<pre><code>obsd# cu -s 115200 -l cuaU0
+Connected to /dev/cuaU0 (speed 115200)
+
+^RSSI:20
+
+^HCSQ:&quot;LTE&quot;,48,35,86,14
+
+^RSSI:1
+
+^HCSQ:&quot;LTE&quot;,11,0,96,0
+
++CGREG: 5,&quot;792D&quot;,&quot;04947221&quot;
+
++CREG: 5,&quot;792D&quot;,&quot;04947221&quot;
+
+^RSSI:20
+
+^HCSQ:&quot;LTE&quot;,48,37,91,18
+
+^RSSI:20
+
+^HCSQ:&quot;LTE&quot;,48,36,91,16
+
+^RSSI:21
+
+^HCSQ:&quot;LTE&quot;,50,36,86,14
+
+....
+
+
+^HCSQ:&quot;LTE&quot;,54,41,111,16
+
+^RSSI:1
+
+^HCSQ:&quot;LTE&quot;,11,0,106,0
+
++CGREG: 5,&quot;007C&quot;,&quot;00B19502&quot;
+
++CREG: 5,&quot;007C&quot;,&quot;00B19502&quot;
+
+^RSSI:25
+
+^HCSQ:&quot;LTE&quot;,58,47,116,14
+
++CGREG: 1,&quot;007C&quot;,&quot;00B19502&quot;
+
++CREG: 1,&quot;007C&quot;,&quot;00B19502&quot;
+
+^XLEMA:1,2,112,0,1,fff
+
+^XLEMA:2,2,911,0,1,fff
+
+^NWTIME:18/12/13,06:20:04+28,00
+
+
+^EONS:0
+
++CGREG: 1,&quot;792D&quot;,&quot;04947220&quot;
+
++CREG: 1,&quot;792D&quot;,&quot;04947220&quot;
+
+^RSSI:20
+
+^HCSQ:&quot;LTE&quot;,48,39,71,22
+
++CGREG: 5,&quot;792D&quot;,&quot;04947220&quot;
+
++CREG: 5,&quot;792D&quot;,&quot;04947220&quot;
+
+^XLEMA:1,2,112,0,1,fff
+
+^XLEMA:2,2,911,0,1,fff
+
+^NWTIME:18/12/13,06:20:08+28,00
+
+
+^EONS:0
+
+</code></pre>
+
+<p>This would appear that it&rsquo;s getting real messages from the network.</p>
+
+<p>About to reboot, then try under Ubuntu live CD. Then try to get to the bottom of the</p>
+
+<blockquote>
+<p>ioctl(TIOCSETD): Device not configured</p>
+</blockquote>
+
+<p>Looking at <a href="https://gist.github.com/artizirk/20acc2ab07fe6cad9fcc">https://gist.github.com/artizirk/20acc2ab07fe6cad9fcc</a></p>
+
+<p>Will install <code>socat</code> and try sending some AT commands to get a better picture</p>
 
 <p><a href="/">back</a></p>
 
