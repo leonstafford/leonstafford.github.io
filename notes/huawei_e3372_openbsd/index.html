@@ -241,6 +241,77 @@ echo 'received a message' &gt;&gt; /home/leon/logsmsevents
 
 <p>Now, we need to set up pppd. Assuming that no received activation SMS is due to not registering on the data network yet, so leaving smsd running and will attempt the ppd setup</p>
 
+<p>Much talk is had about HiLink mode vs Stick mode.</p>
+
+<p>I decided to figure out what mine was being detected as:</p>
+
+<pre><code>obsd# usbdevs
+Controller /dev/usb0:
+addr 01: 8086:0000 Intel, xHCI root hub
+addr 02: 12d1:1442 HUAWEI_MOBILE, HUAWEI_MOBILE
+addr 03: 05ac:12aa Apple Inc., iPod
+Controller /dev/usb1:
+addr 01: 8086:0000 Intel, EHCI root hub
+addr 02: 8087:8000 Intel, Rate Matching Hub
+addr 03: 04f3:012d ELAN, Touchscreen
+addr 04: 04ca:7036 SC20A38485AA4C8E3D, Integrated Camera
+</code></pre>
+
+<p>Based on the above, it looks like we&rsquo;re already operating in Stick mode, with <code>12d1:1442</code>, else assuming the support in umsm in OpenBSD for this device is handling the USB modeswitching automagically&hellip;</p>
+
+<p>Setting up the pppd stuff</p>
+
+<p>I have</p>
+
+<p>/etc/ppp/peers/e3372:</p>
+
+<pre><code>cuaU0
+115200
+debug
+noauth
+nocrtscts
+:10.254.254.1
+ipcp-accept-remote
+defaultroute
+user isp@cingulargprs.com
+demand
+active-filter 'not udp port 123'
+persist
+idle 600
+connect &quot;/usr/sbin/chat -v -f /etc/ppp/dtac-chat&quot;
+
+</code></pre>
+
+<p>/etc/ppp/dtac-chat:</p>
+
+<pre><code>TIMEOUT 10
+REPORT CONNECT
+ABORT BUSY
+ABORT 'NO CARRIER'
+ABORT ERROR
+'' ATZ OK AT&amp;F OK
+AT+CGDCONT=1,&quot;IP&quot;,&quot;www.dtac.co.th&quot; OK
+ATD*99***1# CONNECT
+
+</code></pre>
+
+<p>/etc/ppp/chap-secrets</p>
+
+<pre><code># Secrets for authentication using CHAP
+# client        server  secret                  IP addresses
+isp@cingulargprs.com    *       CINGULAR1
+
+</code></pre>
+
+<p>Finally, run <code>ifconfig ppp0 create</code> (should be showing in ifconfig now) and then <code>pppd e3372 call</code></p>
+
+<p>This doesn&rsquo;t give me much, so I tail <code>/var/log/daemon</code>, resulting in:</p>
+
+<pre><code>Dec 13 13:09:29 obsd pppd[80914]: pppd 2.3.5 started by leon, uid 0
+Dec 13 13:09:29 obsd pppd[80914]: ioctl(TIOCSETD): Device not configured
+
+</code></pre>
+
 <p><a href="/">back</a></p>
 
   </article>
