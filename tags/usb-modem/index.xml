@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Openbsd on Leon Stafford</title>
-    <link>https://leonstafford.github.io/tags/openbsd/</link>
-    <description>Recent content in Openbsd on Leon Stafford</description>
+    <title>Usb Modem on Leon Stafford</title>
+    <link>https://leonstafford.github.io/tags/usb-modem/</link>
+    <description>Recent content in Usb Modem on Leon Stafford</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 13 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://leonstafford.github.io/tags/openbsd/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leonstafford.github.io/tags/usb-modem/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,16 +20,6 @@
       <description>Notes on getting connected to 3G/4G in Thailand on the dtac prepaid SIM
 obsd# gammu identify Device : /dev/cuaU0 Manufacturer : Huawei Model : E3372 (E3372) Firmware : 22.329.63.00.74 IMEI : 866785033700732 SIM IMSI : 520050314388175  Example smsd.conf
 loglevel = 7 user = _smsd pidfile = /var/run/smsd/smsd.pid infofile = /var/run/smsd/smsd.info logfile = /var/log/smsd/smsd.log [GSM1] device = /dev/cuaU0 init = AT^CURC=0 # For this one I have set incoming=no so it doesn&#39;t pull # the existing messages off the phone.</description>
-    </item>
-    
-    <item>
-      <title>Keep Your Core Strong - Know Your BSD/Linux Tools</title>
-      <link>https://leonstafford.github.io/notes/keep_your_core_strong_know_your_bsd_linux_tools/</link>
-      <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://leonstafford.github.io/notes/keep_your_core_strong_know_your_bsd_linux_tools/</guid>
-      <description>Just as the sage advice from The Pragmatic Programmer on mastering one text editor makes so much sense for those of us whose majority of work is rearranging bits on the digital titanic, the same holds true for knowing your operating system and investing in solid tooling for your other main productive tasks.
-Opinionated preface - Open source or GTFO The world&amp;rsquo;s resources are quickly depleting. A growing population having to work sh!</description>
     </item>
     
   </channel>

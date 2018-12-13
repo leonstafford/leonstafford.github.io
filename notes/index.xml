@@ -6,10 +6,21 @@
     <description>Recent content in Notes on Leon Stafford</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://leonstafford.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Huawei E3372 USB 3G/4G modem under OpenBSD 6.4</title>
+      <link>https://leonstafford.github.io/notes/huawei_e3372_openbsd/</link>
+      <pubDate>Thu, 13 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://leonstafford.github.io/notes/huawei_e3372_openbsd/</guid>
+      <description>Notes on getting connected to 3G/4G in Thailand on the dtac prepaid SIM
+obsd# gammu identify Device : /dev/cuaU0 Manufacturer : Huawei Model : E3372 (E3372) Firmware : 22.329.63.00.74 IMEI : 866785033700732 SIM IMSI : 520050314388175  Example smsd.conf
+loglevel = 7 user = _smsd pidfile = /var/run/smsd/smsd.pid infofile = /var/run/smsd/smsd.info logfile = /var/log/smsd/smsd.log [GSM1] device = /dev/cuaU0 init = AT^CURC=0 # For this one I have set incoming=no so it doesn&#39;t pull # the existing messages off the phone.</description>
+    </item>
     
     <item>
       <title>Getting Snipcart custom data attributes into WordPress &#43; Elementor Pricing Table</title>
