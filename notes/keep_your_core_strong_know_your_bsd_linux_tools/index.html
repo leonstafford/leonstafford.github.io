@@ -237,6 +237,10 @@ pm.max_children = 9
 pm.max_spare_servers = 4
 pm.min_spare_servers = 2
 pm.start_servers = 3
+
+; help pinpoint slow scripts
+slowlog = /var/log/php-slow.log
+request_slowlog_timeout = 2s
 </code></pre>
 
 <h1 id="maria">maria</h1>
