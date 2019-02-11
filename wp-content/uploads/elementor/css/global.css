@@ -1,0 +1,41 @@
+.elementor-widget-heading.elementor-widget-heading .elementor-heading-title {color: #f27f6f;}
+.elementor-widget-heading .elementor-heading-title {font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-image .widget-image-caption {color: #a5b3c1;font-family: "Roboto",Sans-serif;font-weight: 400;}
+.elementor-widget-text-editor {color: #a5b3c1;font-family: "Roboto",Sans-serif;font-weight: 400;}
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {background-color: #f27f6f;}
+.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap {color: #f27f6f;border-color: #f27f6f;}
+.elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button {font-family: "Roboto",Sans-serif;font-weight: 500;background-color: #aac9c3;}
+.elementor-widget-divider .elementor-divider-separator {border-top-color: #a5b3c1;}
+.elementor-widget-image-box .elementor-image-box-content .elementor-image-box-title {color: #f27f6f;font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-image-box .elementor-image-box-content .elementor-image-box-description {color: #a5b3c1;font-family: "Roboto",Sans-serif;font-weight: 400;}
+.elementor-widget-icon.elementor-view-stacked .elementor-icon {background-color: #f27f6f;}
+.elementor-widget-icon.elementor-view-framed .elementor-icon, .elementor-widget-icon.elementor-view-default .elementor-icon {color: #f27f6f;border-color: #f27f6f;}
+.elementor-widget-icon-box.elementor-view-stacked .elementor-icon {background-color: #f27f6f;}
+.elementor-widget-icon-box.elementor-view-framed .elementor-icon, .elementor-widget-icon-box.elementor-view-default .elementor-icon {color: #f27f6f;border-color: #f27f6f;}
+.elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title {color: #f27f6f;font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description {color: #a5b3c1;font-family: "Roboto",Sans-serif;font-weight: 400;}
+.elementor-widget-star-rating .elementor-star-rating__title {color: #a5b3c1;font-family: "Roboto",Sans-serif;font-weight: 400;}
+.elementor-widget-image-gallery .gallery-item .gallery-caption {font-family: "Roboto",Sans-serif;font-weight: 500;}
+.elementor-widget-image-carousel .elementor-image-carousel-caption {font-family: "Roboto",Sans-serif;font-weight: 500;}
+.elementor-widget-icon-list .elementor-icon-list-item:not(:last-child):after {border-color: #a5b3c1;}
+.elementor-widget-icon-list .elementor-icon-list-icon i {color: #f27f6f;}
+.elementor-widget-icon-list .elementor-icon-list-text {color: #f4cd78;}
+.elementor-widget-icon-list .elementor-icon-list-item {font-family: "Roboto",Sans-serif;font-weight: 400;}
+.elementor-widget-counter .elementor-counter-number-wrapper {color: #f27f6f;font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-counter .elementor-counter-title {color: #f4cd78;font-family: "Roboto Slab",Sans-serif;font-weight: 400;}
+.elementor-widget-progress .elementor-progress-wrapper .elementor-progress-bar {background-color: #f27f6f;}
+.elementor-widget-progress .elementor-title {color: #f27f6f;font-family: "Roboto",Sans-serif;font-weight: 400;}
+.elementor-widget-testimonial .elementor-testimonial-content {color: #a5b3c1;font-family: "Roboto",Sans-serif;font-weight: 400;}
+.elementor-widget-testimonial .elementor-testimonial-name {color: #f27f6f;font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-testimonial .elementor-testimonial-job {color: #f4cd78;font-family: "Roboto Slab",Sans-serif;font-weight: 400;}
+.elementor-widget-tabs .elementor-tab-title {color: #f27f6f;font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-tabs .elementor-tab-title.elementor-active {color: #aac9c3;}
+.elementor-widget-tabs .elementor-tab-content {color: #a5b3c1;font-family: "Roboto",Sans-serif;font-weight: 400;}
+.elementor-widget-accordion .elementor-accordion .elementor-tab-title {color: #f27f6f;font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-accordion .elementor-accordion .elementor-tab-title.elementor-active {color: #aac9c3;}
+.elementor-widget-accordion .elementor-accordion .elementor-tab-content {color: #a5b3c1;font-family: "Roboto",Sans-serif;font-weight: 400;}
+.elementor-widget-toggle .elementor-toggle .elementor-tab-title {color: #f27f6f;font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-toggle .elementor-toggle .elementor-tab-title.elementor-active {color: #aac9c3;}
+.elementor-widget-toggle .elementor-toggle .elementor-tab-content {color: #a5b3c1;font-family: "Roboto",Sans-serif;font-weight: 400;}
+.elementor-widget-alert .elementor-alert-title {font-family: "Roboto",Sans-serif;font-weight: 600;}
+.elementor-widget-alert .elementor-alert-description {font-family: "Roboto",Sans-serif;font-weight: 400;}
