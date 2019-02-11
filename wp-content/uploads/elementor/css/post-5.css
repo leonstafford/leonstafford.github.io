@@ -53,5 +53,6 @@
 .elementor-5 .elementor-element.elementor-element-53868dc .elementor-social-icon {font-size: 20px;}
 .elementor-5 .elementor-element.elementor-element-53868dc .elementor-social-icon:not(:last-child) {margin-right: 27px;}
 .elementor-5 .elementor-element.elementor-element-77b9531 .elementor-spacer-inner {height: 50px;}
+@media (max-width:767px) {.elementor-5 .elementor-element.elementor-element-25ada9c {line-height: 1.3em;}}
 @media (min-width:768px) {.elementor-5 .elementor-element.elementor-element-78e79e7 {width: 24.305%;}
 	.elementor-5 .elementor-element.elementor-element-190329f {width: 42.349%;}}
